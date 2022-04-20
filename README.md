@@ -15,6 +15,10 @@ Jump to the moment your system crashed and generated the coredump, debugging inf
 * show layout registers `lay r`
 ![layout register](images/layout_reg.png "layout register")
 
+* starts single stepping at the first instruction (saves having to set a breakpoint) `starti`
+* single stepping instructions in assembly `si` and `ni`
+* displays floating point registers `tui reg float`
+
 * start the program (run) `r`
 * step line by line (step) `s`
 * step over a function (next) `n`
