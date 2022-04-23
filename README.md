@@ -40,5 +40,6 @@ Jump to the moment your system crashed and generated the coredump, debugging inf
 * list code associated with this variable `li`
 * show stack frames, the current frame has value of 0 `fr <frame number (optional)>`
 * show call stack (backtrace) `bt`
-* examine memory by address or by symbol if -g was used `x/<number><format o|h|d|...><size b|h|w|g><address or symbol>`, `help x`
-
+* examine memory by address or by symbol if -g was used `x/<number><format o|h|d|i|...><size b|h|w|g><address or symbol>`, `help x`, for example `x/12xw foo` will show 12 words in hex format starting from the symbol foo.
+`x/12xi foo` shows 12 instructions.
+`x/12xh foo` shows 12 half-words.
