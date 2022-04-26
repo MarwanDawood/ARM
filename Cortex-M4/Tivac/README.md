@@ -97,3 +97,4 @@ sudo openocd -f /usr/share/openocd/scripts/board/ek-lm4f120xl.cfg
 ```
 gdb-multiarch gcc/project0.axf -ex 'target remote localhost:3333' -ex 'layout split' -ex 'layout regs'
 ```
+[using gdb debugger and OpenOCD](docs/debugger.png "using gdb debugger and OpenOCD")
